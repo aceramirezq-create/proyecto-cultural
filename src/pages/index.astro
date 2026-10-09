@@ -1,16 +1,32 @@
 ---
----
+import Layout from '../layouts/Layout.astro';
+// El componente TarjetaTaller no existe en la ruta indicada, por lo que se elimina la importación.
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+---
+<Layout titulo="Inicio">
+  <section class="bienvenida">
+    <h1>Bienvenidos a Espacio Cultural</h1>
+    <p>Un punto de encuentro para el arte, la creatividad y la comunidad.</p>
+  </section>
+
+  <h2>Talleres Destacados</h2>
+  <div class="grid-talleres">
+    <article class="tarjeta-taller">
+      <img src="/src/img/fotografia.jpg" alt="Fotografía" />
+      <h3>Fotografía</h3>
+      <p>Introducción a la composición y técnicas de fotografía digital.</p>
+    </article>
+
+    <article class="tarjeta-taller">
+      <img src="/src/img/ceramica.jpg" alt="Cerámica" />
+      <h3>Cerámica</h3>
+      <p>Creación de objetos utilizando técnicas básicas de modelado.</p>
+    </article>
+
+    <article class="tarjeta-taller">
+      <img src="/src/img/escritura.jpg" alt="Escritura creativa" />
+      <h3>Escritura creativa</h3>
+      <p>Exploración de relatos breves y ejercicios de escritura.</p>
+    </article>
+  </div>
+</Layout>
