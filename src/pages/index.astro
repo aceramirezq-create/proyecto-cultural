@@ -1,8 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-// El componente TarjetaTaller no existe en la ruta indicada, por lo que se elimina la importación.
+import TarjetaTaller from '../components/TarjetaTaller.astro';
 
+// Importación de imágenes nombradas del 1 al 3 desde src/img/
+import img1 from '../img/1.svg';
+import img2 from '../img/2.svg';
+import img3 from '../img/3.svg';
 ---
+
 <Layout titulo="Inicio">
   <section class="bienvenida">
     <h1>Bienvenidos a Espacio Cultural</h1>
@@ -11,22 +16,20 @@ import Layout from '../layouts/Layout.astro';
 
   <h2>Talleres Destacados</h2>
   <div class="grid-talleres">
-    <article class="tarjeta-taller">
-      <img src="/src/img/fotografia.jpg" alt="Fotografía" />
-      <h3>Fotografía</h3>
-      <p>Introducción a la composición y técnicas de fotografía digital.</p>
-    </article>
-
-    <article class="tarjeta-taller">
-      <img src="/src/img/ceramica.jpg" alt="Cerámica" />
-      <h3>Cerámica</h3>
-      <p>Creación de objetos utilizando técnicas básicas de modelado.</p>
-    </article>
-
-    <article class="tarjeta-taller">
-      <img src="/src/img/escritura.jpg" alt="Escritura creativa" />
-      <h3>Escritura creativa</h3>
-      <p>Exploración de relatos breves y ejercicios de escritura.</p>
-    </article>
+    <TarjetaTaller 
+      nombre="Fotografía" 
+      descripcion="Introducción a la composición y técnicas de fotografía digital." 
+      imagen={img1.src} 
+    />
+    <TarjetaTaller 
+      nombre="Cerámica" 
+      descripcion="Creación de objetos utilizando técnicas básicas de modelado." 
+      imagen={img2.src} 
+    />
+    <TarjetaTaller 
+      nombre="Escritura creativa" 
+      descripcion="Exploración de relatos breves y ejercicios de escritura." 
+      imagen={img3.src} 
+    />
   </div>
 </Layout>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="100%" height="100%">
+  <rect width="400" height="250" fill="#8e44ad"/>
+  <path d="M 130 160 C 150 80, 210 80, 230 160 C 250 120, 270 120, 280 160 Z" fill="#9b59b6"/>
+  <circle cx="160" cy="110" r="15" fill="#f1c40f"/>
+  <circle cx="240" cy="120" r="20" fill="#e74c3c"/>
+  <circle cx="200" cy="150" r="18" fill="#3498db"/>
+  <text x="200" y="220" font-family="Arial" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">Ilustración</text>
+</svg>

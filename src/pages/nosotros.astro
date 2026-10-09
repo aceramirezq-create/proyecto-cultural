@@ -1,9 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import img5 from '../img/5.svg';
 ---
+
 <Layout titulo="Nosotros">
   <h1>Sobre Nosotros</h1>
   <p>En Espacio Cultural impulsamos la creatividad y el aprendizaje colaborativo. Nuestro propósito es ser un lugar donde las personas puedan explorar distintas disciplinas artísticas y desarrollar sus habilidades en un entorno inclusivo.</p>
   
-  <img src="/src/img/nosotros.jpg" alt="Organización Espacio Cultural" style="width:100%; max-width:600px; border-radius:8px; margin-top:1rem;" />
+  <img 
+    src={img5.src} 
+    alt="Espacio Cultural" 
+    style="width: 100%; max-width: 600px; border-radius: 8px; margin-top: 1.5rem;" 
+  />
 </Layout>
